@@ -1,5 +1,4 @@
-# pagina web oficial Yoiner
+#do react
 página web
 
-cambio desde pc
 
