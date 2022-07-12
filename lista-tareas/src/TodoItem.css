@@ -39,13 +39,13 @@
     height: 100%;
     left: 0px;
     background-color: rgb(224, 84, 84);
-    width: 15px;
+    width: 30px;
     border-radius: 10px 0 0 10px;
   }
   .Icon-check--active {
     color: #3db341;
     background-color: rgb(43, 221, 97);
-    width: 15px;
+    width: 30px;
     
   }
   
@@ -56,7 +56,7 @@
     font-weight: bold;
     background-color: rgb(153, 31, 31);
     border-radius: 50%;
-    color: whitesmoke;
+    color: #DFF6FF;
   }
   .Icon-delete:hover {
     color: rgb(255, 255, 255);
