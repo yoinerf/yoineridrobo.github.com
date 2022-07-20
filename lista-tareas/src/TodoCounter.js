@@ -1,6 +1,6 @@
 import React from "react";
 import './TodoCounter.css';
-function TodoCounter(){
+function TodoCounter({total,pendientes}){
     return(
         <div>
             <h1 className="Banner">
@@ -11,8 +11,9 @@ function TodoCounter(){
             <div>
                 <h1 className="TodoCounter">
                     <spam className="texto">Tienes </spam>
-                    <spam className="numero">5 </spam>
-                    <spam className="texto">tareas por completar.</spam> 
+                    <spam className="numero">{pendientes} </spam>
+                    <spam className="texto">tareas pendientes de </spam>
+                    <spam className="numero">{total}</spam>  
                 </h1>
             </div>
         </div>
