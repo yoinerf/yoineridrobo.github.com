@@ -1,10 +1,11 @@
 import React from 'react';
-import { BannerInfo } from "./BannerInfo";
-import { TodoCounter } from "./TodoCounter";
-import { TodoSearch } from "./TodoSearch.js";
-import { TodoList } from "./TodoList.js";
-import { TodoItem } from "./TodoItem.js";
-import { CreateTodoButtom } from "./CreateTodoButtom.js";
+import { BannerInfo } from "../BannerInfo/Index.js";
+import { TodoCounter } from "../TodoCounter/Index.js";
+import { TodoSearch } from "../TodoSearch/Index.js";
+import { TodoList } from "../TodoList/Index.js";
+import { TodoItem } from "../TodoItem/Index.js";
+import { CreateTodoButtom } from "../CreateTodoButtom/Index.js";
+
 //import './App.css';
 const DefaultTodos=[
   {text:'Comprar Gabinete', completed:true},
@@ -20,12 +21,12 @@ function App() {
 
   const pendiente = todos.filter(todo=>!todo.completed).length;
   const totalTodos=todos.length;
-
   let searchedTodos = [];
 
   if(!searchValue.length >= 1){
     searchedTodos = todos;
   }
+ 
   else{
     searchedTodos=todos.filter(todo=>{
       const todoText = todo.text.toLowerCase();
@@ -47,6 +48,7 @@ function App() {
     newTodos.splice(todoIndex,1);
     setTodos(newTodos);
   }
+
   return (
    <React.Fragment>
       <BannerInfo/>
@@ -69,6 +71,7 @@ function App() {
         />
         ))}
       </TodoList>
+      
       <CreateTodoButtom />      
    </React.Fragment>
   );
